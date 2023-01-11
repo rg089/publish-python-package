@@ -1,3 +1,7 @@
+# Utility script for creating python package structure
+# Author: rg089
+
+
 PROJECT_NAME=$1
 
 touch LICENSE
