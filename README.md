@@ -25,9 +25,9 @@ Then, add the following:
 name = "{PROJECT_NAME}"
 version = "0.0.1"
 authors = [
-  { name="Rishabh Gupta", email="rishabhforprojects@gmail.com" },
+  { name="NAME", email="EMAIL" },
 ]
-description = "A minimal wrapper over matplotlib for generating clean and elegant plots for publications"
+description = "DESC"
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
@@ -37,8 +37,8 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Homepage" = "DOCUMENTATION URL/ GITHUB URL"
+"Bug Tracker" = "GITHUB ISSUES URL"
 ```
 Fill with the desired arguments. Chose classifiers from https://pypi.org/classifiers/.
 
@@ -46,8 +46,14 @@ Fill with the desired arguments. Chose classifiers from https://pypi.org/classif
 
 Chose a license from [https://choosealicense.com/](https://choosealicense.com/) and paste its text in the `LICENSE` file.
 
-## Building
+## Building and Uploading (Direct)
 
+Run:
+```
+bash build_upload.sh
+```
+
+## Building and Uploading (Stepwise)
 Run:
 ```
 python -m pip install --upgrade build
@@ -60,8 +66,6 @@ python -m build
 ```
 
 Hopefully, the `dist` folder should be created with the built files!
-
-## Uploading
 
 Install twine:
 
